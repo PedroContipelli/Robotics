@@ -35,8 +35,8 @@ void opcontrol()
     }
 
     // MOTOR CONTROL
-		left_back.move(!reverse_drive ? master.get_analog(ANALOG_LEFT_Y) : -master.get_analog(ANALOG_RIGHT_Y));
-		left_front.move(!reverse_drive ? master.get_analog(ANALOG_LEFT_Y) : -master.get_analog(ANALOG_RIGHT_Y));
+    left_back.move(!reverse_drive ? master.get_analog(ANALOG_LEFT_Y) : -master.get_analog(ANALOG_RIGHT_Y));
+    left_front.move(!reverse_drive ? master.get_analog(ANALOG_LEFT_Y) : -master.get_analog(ANALOG_RIGHT_Y));
     right_back.move(!reverse_drive ? master.get_analog(ANALOG_RIGHT_Y) : -master.get_analog(ANALOG_LEFT_Y));
     right_front.move(!reverse_drive ? master.get_analog(ANALOG_RIGHT_Y) : -master.get_analog(ANALOG_LEFT_Y));
 
